@@ -1,0 +1,375 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment99, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py FFFFFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_split_safe_s1 ______________________________
+
+    def test_split_safe_s1():
+        res = split_safe("Name,'Father Name',Address,Age")
+        exp = ['Name','Father Name','Address','Age']
+>       assert res == exp
+E       assert ['Name', "'Fa...dress', 'Age'] == ['Name', 'Fath...dress', 'Age']
+E         At index 1 diff: "'Father Name'" != 'Father Name'
+E         Use -v to get the full diff
+
+test_student.py:18: AssertionError
+_____________________________ test_split_safe_s2 ______________________________
+
+    def test_split_safe_s2():
+        res = split_safe("Ali,Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', 'Tari...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 2 diff: "'House 10" != 'House 10, Street 20'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:23: AssertionError
+_____________________________ test_split_safe_s3 ______________________________
+
+    def test_split_safe_s3():
+        res = split_safe("Ali, Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', ' Tar...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 1 diff: ' Tariq' != 'Tariq'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:28: AssertionError
+_____________________________ test_split_safe_s4 ______________________________
+
+    def test_split_safe_s4():
+        res = split_safe("")
+        exp = []
+>       assert res == exp
+E       assert None == []
+
+test_student.py:33: AssertionError
+_____________________________ test_split_safe_s5 ______________________________
+
+    def test_split_safe_s5():
+        res = split_safe("a,'n,x'")
+        exp = ['a', 'n,x']
+>       assert res == exp
+E       assert ['a', "'n", "x'"] == ['a', 'n,x']
+E         At index 1 diff: "'n" != 'n,x'
+E         Left contains more items, first extra item: "x'"
+E         Use -v to get the full diff
+
+test_student.py:38: AssertionError
+______________________________ test_read_data_s1 ______________________________
+
+    def test_read_data_s1():
+>       res = read_data('', 'file.csv')
+E       NameError: name 'read_data' is not defined
+
+test_student.py:42: NameError
+______________________________ test_read_data_s2 ______________________________
+
+    def test_read_data_s2():
+        s = "Name,Father Name,Address"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = 'Name,Father Name,Address', d = 'temp', f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       NameError: name 'read_data' is not defined
+
+test_student.py:61: NameError
+______________________________ test_read_data_s3 ______________________________
+
+    def test_read_data_s3():
+        s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'", d = 'temp'
+f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       NameError: name 'read_data' is not defined
+
+test_student.py:61: NameError
+========================== 8 failed in 0.33 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment99, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a07 import read_data
+a07.py:10: in <module>
+    split_safe(s)
+E   NameError: name 's' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.17 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment99, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a07 import read_data
+a07.py:10: in <module>
+    split_safe(s)
+E   NameError: name 's' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment99, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py FFFFFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_split_safe_s1 ______________________________
+
+    def test_split_safe_s1():
+        res = split_safe("Name,'Father Name',Address,Age")
+        exp = ['Name','Father Name','Address','Age']
+>       assert res == exp
+E       assert ['Name', "'Fa...dress', 'Age'] == ['Name', 'Fath...dress', 'Age']
+E         At index 1 diff: "'Father Name'" != 'Father Name'
+E         Use -v to get the full diff
+
+test_student.py:18: AssertionError
+_____________________________ test_split_safe_s2 ______________________________
+
+    def test_split_safe_s2():
+        res = split_safe("Ali,Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', 'Tari...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 2 diff: "'House 10" != 'House 10, Street 20'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:23: AssertionError
+_____________________________ test_split_safe_s3 ______________________________
+
+    def test_split_safe_s3():
+        res = split_safe("Ali, Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', ' Tar...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 1 diff: ' Tariq' != 'Tariq'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:28: AssertionError
+_____________________________ test_split_safe_s4 ______________________________
+
+    def test_split_safe_s4():
+        res = split_safe("")
+        exp = []
+>       assert res == exp
+E       assert None == []
+
+test_student.py:33: AssertionError
+_____________________________ test_split_safe_s5 ______________________________
+
+    def test_split_safe_s5():
+        res = split_safe("a,'n,x'")
+        exp = ['a', 'n,x']
+>       assert res == exp
+E       assert ['a', "'n", "x'"] == ['a', 'n,x']
+E         At index 1 diff: "'n" != 'n,x'
+E         Left contains more items, first extra item: "x'"
+E         Use -v to get the full diff
+
+test_student.py:38: AssertionError
+______________________________ test_read_data_s1 ______________________________
+
+    def test_read_data_s1():
+>       res = read_data('', 'file.csv')
+E       NameError: name 'read_data' is not defined
+
+test_student.py:42: NameError
+______________________________ test_read_data_s2 ______________________________
+
+    def test_read_data_s2():
+        s = "Name,Father Name,Address"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = 'Name,Father Name,Address', d = 'temp', f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       NameError: name 'read_data' is not defined
+
+test_student.py:61: NameError
+______________________________ test_read_data_s3 ______________________________
+
+    def test_read_data_s3():
+        s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'", d = 'temp'
+f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       NameError: name 'read_data' is not defined
+
+test_student.py:61: NameError
+========================== 8 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment99, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py FFFFFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_split_safe_s1 ______________________________
+
+    def test_split_safe_s1():
+        res = split_safe("Name,'Father Name',Address,Age")
+        exp = ['Name','Father Name','Address','Age']
+>       assert res == exp
+E       assert ['Name', "'Fa...dress', 'Age'] == ['Name', 'Fath...dress', 'Age']
+E         At index 1 diff: "'Father Name'" != 'Father Name'
+E         Use -v to get the full diff
+
+test_student.py:18: AssertionError
+_____________________________ test_split_safe_s2 ______________________________
+
+    def test_split_safe_s2():
+        res = split_safe("Ali,Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', 'Tari...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 2 diff: "'House 10" != 'House 10, Street 20'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:23: AssertionError
+_____________________________ test_split_safe_s3 ______________________________
+
+    def test_split_safe_s3():
+        res = split_safe("Ali, Tariq,'House 10, Street 20',30")
+        exp = ['Ali','Tariq','House 10, Street 20','30']
+>       assert res == exp
+E       assert ['Ali', ' Tar...et 20'", '30'] == ['Ali', 'Tariq...eet 20', '30']
+E         At index 1 diff: ' Tariq' != 'Tariq'
+E         Left contains more items, first extra item: '30'
+E         Use -v to get the full diff
+
+test_student.py:28: AssertionError
+_____________________________ test_split_safe_s4 ______________________________
+
+    def test_split_safe_s4():
+        res = split_safe("")
+        exp = []
+>       assert res == exp
+E       assert None == []
+
+test_student.py:33: AssertionError
+_____________________________ test_split_safe_s5 ______________________________
+
+    def test_split_safe_s5():
+        res = split_safe("a,'n,x'")
+        exp = ['a', 'n,x']
+>       assert res == exp
+E       assert ['a', "'n", "x'"] == ['a', 'n,x']
+E         At index 1 diff: "'n" != 'n,x'
+E         Left contains more items, first extra item: "x'"
+E         Use -v to get the full diff
+
+test_student.py:38: AssertionError
+______________________________ test_read_data_s1 ______________________________
+
+    def test_read_data_s1():
+>       res = read_data('', 'file.csv')
+E       TypeError: read_data() takes 1 positional argument but 2 were given
+
+test_student.py:42: TypeError
+______________________________ test_read_data_s2 ______________________________
+
+    def test_read_data_s2():
+        s = "Name,Father Name,Address"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = 'Name,Father Name,Address', d = 'temp', f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       TypeError: read_data() takes 1 positional argument but 2 were given
+
+test_student.py:61: TypeError
+______________________________ test_read_data_s3 ______________________________
+
+    def test_read_data_s3():
+        s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'"
+>       res = write_str_and_get_date(s, 'temp', 'file.csv')
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = "Name,Father Name,Address\nAli,Khayam,'H, 21, Street 2'", d = 'temp'
+f = 'file.csv'
+
+    def write_str_and_get_date(s, d, f):
+        import os
+        write_str_to_file(s, d, f)
+>       res = read_data(d, f)
+E       TypeError: read_data() takes 1 positional argument but 2 were given
+
+test_student.py:61: TypeError
+========================== 8 failed in 0.17 seconds ===========================

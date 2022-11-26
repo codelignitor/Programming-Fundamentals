@@ -1,0 +1,1316 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.16 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.17 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.16 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.12 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.16 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.FFFF.                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       assert "I'll take it!" == 'I値l take it!'
+E         - I'll take it!
+E         ?  ^
+E         + I値l take it!
+E         ?  ^
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No Way' == 'No way'
+E         - No Way
+E         ?    ^
+E         + No way
+E         ?    ^
+
+test_student.py:11: AssertionError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       assert "I'll take it!" == 'I値l take it!'
+E         - I'll take it!
+E         ?  ^
+E         + I値l take it!
+E         ?  ^
+
+test_student.py:13: AssertionError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       assert "I'll take it!" == 'I値l take it!'
+E         - I'll take it!
+E         ?  ^
+E         + I値l take it!
+E         ?  ^
+
+test_student.py:15: AssertionError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       assert "I'll take it!" == 'I値l take it!'
+E         - I'll take it!
+E         ?  ^
+E         + I値l take it!
+E         ?  ^
+
+test_student.py:17: AssertionError
+===================== 5 failed, 2 passed in 0.39 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .......                                                  [100%]
+
+========================== 7 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .......                                                  [100%]
+
+========================== 7 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .......                                                  [100%]
+
+========================== 7 passed in 0.11 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.22 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.17 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.23 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...ething better' == 'I値l take it!'
+E         - No thanks, I can find something better
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       AssertionError: assert 'No thanks, I...ething better' == 'No thanks, I ...thing better.'
+E         - No thanks, I can find something better
+E         + No thanks, I can find something better.
+E         ?                                       +
+
+test_student.py:9: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...ething better' == 'No way'
+E         - No thanks, I can find something better
+E         + No way
+
+test_student.py:11: AssertionError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...ething better' == 'I値l take it!'
+E         - No thanks, I can find something better
+E         + I値l take it!
+
+test_student.py:13: AssertionError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       assert "I'll take it" == 'I値l take it!'
+E         - I'll take it
+E         ?  ^
+E         + I値l take it!
+E         ?  ^          +
+
+test_student.py:15: AssertionError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...ething better' == 'I値l take it!'
+E         - No thanks, I can find something better
+E         + I値l take it!
+
+test_student.py:17: AssertionError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       AssertionError: assert 'No thanks, I...ething better' == 'No thanks, I ...thing better.'
+E         - No thanks, I can find something better
+E         + No thanks, I can find something better.
+E         ?                                       +
+
+test_student.py:19: AssertionError
+========================== 7 failed in 0.19 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.FFFF.                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'No way'
+E         - No thanks, I can find something better.
+E         + No way
+
+test_student.py:11: AssertionError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:13: AssertionError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       assert "I'll take it" == 'I値l take it!'
+E         - I'll take it
+E         ?  ^
+E         + I値l take it!
+E         ?  ^          +
+
+test_student.py:15: AssertionError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:17: AssertionError
+===================== 5 failed, 2 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.FFFF.                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'No way'
+E         - No thanks, I can find something better.
+E         + No way
+
+test_student.py:11: AssertionError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:13: AssertionError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       AssertionError: assert 'I値l take it' == 'I値l take it!'
+E         - I値l take it
+E         + I値l take it!
+E         ?             +
+
+test_student.py:15: AssertionError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:17: AssertionError
+===================== 5 failed, 2 passed in 0.20 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.FF.F.                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'No way'
+E         - No thanks, I can find something better.
+E         + No way
+
+test_student.py:11: AssertionError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:13: AssertionError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:17: AssertionError
+===================== 4 failed, 3 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.F....                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'No way'
+E         - No thanks, I can find something better.
+E         + No way
+
+test_student.py:11: AssertionError
+===================== 2 failed, 5 passed in 0.15 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py F.F....                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'I値l take it!'
+E         - No thanks, I can find something better.
+E         + I値l take it!
+
+test_student.py:7: AssertionError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       AssertionError: assert 'No thanks, I...thing better.' == 'No way'
+E         - No thanks, I can find something better.
+E         + No way
+
+test_student.py:11: AssertionError
+===================== 2 failed, 5 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py ...F...                                                  [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       AssertionError: assert 'No way' == 'I値l take it!'
+E         - No way
+E         + I値l take it!
+
+test_student.py:13: AssertionError
+===================== 1 failed, 6 passed in 0.14 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+________________________________ test_jobOffer ________________________________
+
+    def test_jobOffer():
+>       assert jobOffer(50000, "Peshawar")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:7: NameError
+_______________________________ test_jobOffer2 ________________________________
+
+    def test_jobOffer2():
+>       assert jobOffer(40000, "Peshawar")=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:9: NameError
+_______________________________ test_jobOffer3 ________________________________
+
+    def test_jobOffer3():
+>       assert jobOffer(50000, "Karachi")=="No way"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:11: NameError
+_______________________________ test_jobOffer4 ________________________________
+
+    def test_jobOffer4():
+>       assert jobOffer(100000, "Karachi")=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:13: NameError
+_______________________________ test_jobOffer5 ________________________________
+
+    def test_jobOffer5():
+>       assert jobOffer(100000)=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:15: NameError
+_______________________________ test_jobOffer6 ________________________________
+
+    def test_jobOffer6():
+>       assert jobOffer(100000, 'Lahore')=="I値l take it!"
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:17: NameError
+_______________________________ test_jobOffer7 ________________________________
+
+    def test_jobOffer7():
+>       assert jobOffer(4000,'Lahore')=="No thanks, I can find something better."
+E       NameError: name 'jobOffer' is not defined
+
+test_student.py:19: NameError
+========================== 7 failed in 0.21 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment100, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py .......                                                  [100%]
+
+========================== 7 passed in 0.06 seconds ===========================
