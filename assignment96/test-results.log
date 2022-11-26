@@ -1,0 +1,442 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFF.F                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_marks_s1 ________________________________
+
+    def test_marks_s1():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1003', 'marks': {
+                    'calculus': (2.4, 1.5, 12, None, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+E       NameError: name 'get_student_marks' is not defined
+
+test_student.py:36: NameError
+________________________________ test_marks_s2 ________________________________
+
+    def test_marks_s2():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1122', 'marks': {
+                    'calculus': (2.4, 1.5, 12, 28, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+E       NameError: name 'get_student_marks' is not defined
+
+test_student.py:74: NameError
+_______________________________ test_grades_s1 ________________________________
+
+    def test_grades_s1():
+        grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+>       assert get_grade(65, grade_boundaries) == 'C'
+E       AssertionError: assert 'D' == 'C'
+E         - D
+E         + C
+
+test_student.py:92: AssertionError
+_______________________________ test_grades_s2 ________________________________
+
+    def test_grades_s2():
+        grade_boundaries = {'A': 70, 'B': 60, 'C': 50, 'D': 40}
+>       assert get_grade(65, grade_boundaries) == 'B'
+E       AssertionError: assert 'D' == 'B'
+E         - D
+E         + B
+
+test_student.py:97: AssertionError
+_______________________________ test_grades_s4 ________________________________
+
+    def test_grades_s4():
+        grade_boundaries = {'A': 90, 'B': 89, 'C': 88, 'D': 87}
+>       assert get_grade(76, grade_boundaries) == 'F'
+E       AssertionError: assert 'C' == 'F'
+E         - C
+E         + F
+
+test_student.py:105: AssertionError
+===================== 5 failed, 1 passed in 0.24 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a06 import get_student_marks
+a06.py:11: in <module>
+    get_grade(49.5,d)
+E   NameError: name 'd' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.41 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a06 import get_student_marks
+a06.py:11: in <module>
+    get_grade(49.5,d)
+E   NameError: name 'd' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.16 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FF.F.F                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_marks_s1 ________________________________
+
+    def test_marks_s1():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1003', 'marks': {
+                    'calculus': (2.4, 1.5, 12, None, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+E       NameError: name 'get_student_marks' is not defined
+
+test_student.py:36: NameError
+________________________________ test_marks_s2 ________________________________
+
+    def test_marks_s2():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1122', 'marks': {
+                    'calculus': (2.4, 1.5, 12, 28, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+E       NameError: name 'get_student_marks' is not defined
+
+test_student.py:74: NameError
+_______________________________ test_grades_s2 ________________________________
+
+    def test_grades_s2():
+        grade_boundaries = {'A': 70, 'B': 60, 'C': 50, 'D': 40}
+>       assert get_grade(65, grade_boundaries) == 'B'
+E       AssertionError: assert 'C' == 'B'
+E         - C
+E         + B
+
+test_student.py:97: AssertionError
+_______________________________ test_grades_s4 ________________________________
+
+    def test_grades_s4():
+        grade_boundaries = {'A': 90, 'B': 89, 'C': 88, 'D': 87}
+>       assert get_grade(76, grade_boundaries) == 'F'
+E       AssertionError: assert 'B' == 'F'
+E         - B
+E         + F
+
+test_student.py:105: AssertionError
+===================== 4 failed, 2 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FF.F.F                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_marks_s1 ________________________________
+
+    def test_marks_s1():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1003', 'marks': {
+                    'calculus': (2.4, 1.5, 12, None, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+d = [{'attendance': 88.4, 'marks': {'calculus': (2.4, 1.5, 12, 1.6, 21), 'english': (1.4, 2.5, 15, 9.6, 33)}, 'roll_no': '...': {'calculus': (2.4, 1.5, 12, None, 21), 'programming fundamentals': (2.4, 1.5, 12, 1.6, 21)}, 'roll_no': 'p18-1003'}]
+
+    def get_student_marks(d):
+        R={}
+        for i in d:
+            a=d[0]['marks']['english']
+            b=d[0]['marks']['calculus']
+>           c=sum(a,b)
+E           TypeError: can only concatenate tuple (not "float") to tuple
+
+a06.py:38: TypeError
+________________________________ test_marks_s2 ________________________________
+
+    def test_marks_s2():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1122', 'marks': {
+                    'calculus': (2.4, 1.5, 12, 28, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+d = [{'attendance': 88.4, 'marks': {'calculus': (2.4, 1.5, 12, 1.6, 21), 'english': (1.4, 2.5, 15, 9.6, 33)}, 'roll_no': '...ks': {'calculus': (2.4, 1.5, 12, 28, 21), 'programming fundamentals': (2.4, 1.5, 12, 1.6, 21)}, 'roll_no': 'p18-1122'}]
+
+    def get_student_marks(d):
+        R={}
+        for i in d:
+            a=d[0]['marks']['english']
+            b=d[0]['marks']['calculus']
+>           c=sum(a,b)
+E           TypeError: can only concatenate tuple (not "float") to tuple
+
+a06.py:38: TypeError
+_______________________________ test_grades_s2 ________________________________
+
+    def test_grades_s2():
+        grade_boundaries = {'A': 70, 'B': 60, 'C': 50, 'D': 40}
+>       assert get_grade(65, grade_boundaries) == 'B'
+E       AssertionError: assert 'C' == 'B'
+E         - C
+E         + B
+
+test_student.py:97: AssertionError
+_______________________________ test_grades_s4 ________________________________
+
+    def test_grades_s4():
+        grade_boundaries = {'A': 90, 'B': 89, 'C': 88, 'D': 87}
+>       assert get_grade(76, grade_boundaries) == 'F'
+E       AssertionError: assert 'B' == 'F'
+E         - B
+E         + F
+
+test_student.py:105: AssertionError
+===================== 4 failed, 2 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Downloads\assignment96, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 10.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FF.F.F                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_marks_s1 ________________________________
+
+    def test_marks_s1():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1003', 'marks': {
+                    'calculus': (2.4, 1.5, 12, None, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+
+test_student.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+d = [{'attendance': 88.4, 'marks': {'calculus': (2.4, 1.5, 12, 1.6, 21), 'english': (1.4, 2.5, 15, 9.6, 33)}, 'roll_no': '...': {'calculus': (2.4, 1.5, 12, None, 21), 'programming fundamentals': (2.4, 1.5, 12, 1.6, 21)}, 'roll_no': 'p18-1003'}]
+
+    def get_student_marks(d):
+        R={}
+        for i in d:
+            a=d[0]['marks']['english']
+            b=d[0]['marks']['calculus']
+>           c=sum(a,b)
+E           TypeError: can only concatenate tuple (not "float") to tuple
+
+a06.py:36: TypeError
+________________________________ test_marks_s2 ________________________________
+
+    def test_marks_s2():
+        # grade_boundaries = {'A': 80, 'B': 70, 'C': 60, 'D': 50}
+        student_data = [
+            {'roll_no': 'p18-1001', 'marks': {
+                    'english': (1.4, 2.5, 15, 9.6, 33),
+                    'calculus': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 88.4
+            },
+            {'roll_no': 'p18-1002', 'marks': {
+                    'english': (2.4, 1.5, 12, 1.6, 21),
+                    'programming fundaments': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+            {'roll_no': 'p18-1122', 'marks': {
+                    'calculus': (2.4, 1.5, 12, 28, 21),
+                    'programming fundamentals': (2.4, 1.5, 12, 1.6, 21),
+                }, 'attendance': 79.4
+            },
+        ]
+    
+    
+>       student_marks = get_student_marks(student_data)
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+d = [{'attendance': 88.4, 'marks': {'calculus': (2.4, 1.5, 12, 1.6, 21), 'english': (1.4, 2.5, 15, 9.6, 33)}, 'roll_no': '...ks': {'calculus': (2.4, 1.5, 12, 28, 21), 'programming fundamentals': (2.4, 1.5, 12, 1.6, 21)}, 'roll_no': 'p18-1122'}]
+
+    def get_student_marks(d):
+        R={}
+        for i in d:
+            a=d[0]['marks']['english']
+            b=d[0]['marks']['calculus']
+>           c=sum(a,b)
+E           TypeError: can only concatenate tuple (not "float") to tuple
+
+a06.py:36: TypeError
+_______________________________ test_grades_s2 ________________________________
+
+    def test_grades_s2():
+        grade_boundaries = {'A': 70, 'B': 60, 'C': 50, 'D': 40}
+>       assert get_grade(65, grade_boundaries) == 'B'
+E       AssertionError: assert 'C' == 'B'
+E         - C
+E         + B
+
+test_student.py:97: AssertionError
+_______________________________ test_grades_s4 ________________________________
+
+    def test_grades_s4():
+        grade_boundaries = {'A': 90, 'B': 89, 'C': 88, 'D': 87}
+>       assert get_grade(76, grade_boundaries) == 'F'
+E       AssertionError: assert 'B' == 'F'
+E         - B
+E         + F
+
+test_student.py:105: AssertionError
+===================== 4 failed, 2 passed in 0.15 seconds ======================
