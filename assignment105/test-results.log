@@ -1,0 +1,1676 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.12 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+ImportError while importing test module 'C:\Users\admin\Documents\assignment105\test_student.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E   ImportError: cannot import name 'saddle_points'
+------------------------------- Captured stdout -------------------------------
+{(0, 1), (0, 2)}
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.30 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(0, 0), (0, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(0, 0), (0, 2)} == set()
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 0), (0, 1), (0, 2)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 1)
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       AssertionError: assert {(0, 0), (0, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert {(0, 1), (0, 2)} == {(2, 2)}
+E         Extra items in the left set:
+E         (0, 1)
+E         (0, 2)
+E         Extra items in the right set:
+E         (2, 2)
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+===================== 5 failed, 1 passed in 0.25 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import saddle_points
+a03.py:32: in <module>
+    print(saddle_points(matrix))
+E   NameError: name 'matrix' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.27 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import saddle_points
+a03.py:32: in <module>
+    print(saddle_points())
+E   TypeError: saddle_points() missing 1 required positional argument: 'matrix'
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.18 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import saddle_points
+a03.py:32: in <module>
+    print(saddle_points(m))
+E   NameError: name 'm' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.27 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(0, 0), (0, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(0, 0), (0, 2)} == set()
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 0), (0, 1), (0, 2)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 1)
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       AssertionError: assert {(0, 0), (0, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert {(0, 1), (0, 2)} == {(2, 2)}
+E         Extra items in the left set:
+E         (0, 1)
+E         (0, 2)
+E         Extra items in the right set:
+E         (2, 2)
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+===================== 5 failed, 1 passed in 0.23 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(0, 0), (0, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(0, 0), (0, 2)} == set()
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 0), (0, 1), (0, 2)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 1)
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       AssertionError: assert {(0, 0), (0, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (0, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert {(0, 1), (0, 2)} == {(2, 2)}
+E         Extra items in the left set:
+E         (0, 1)
+E         (0, 2)
+E         Extra items in the right set:
+E         (2, 2)
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+===================== 5 failed, 1 passed in 0.26 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 23
+E       for i,x in enumerate(r):
+E                                ^
+E   IndentationError: unindent does not match any outer indentation level
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.55 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 23
+E       for i,x in enumerate(r):
+E                                ^
+E   IndentationError: unindent does not match any outer indentation level
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.21 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert (2, 2) == {(0, 2)}
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+____________________________ test_no_saddle_points ____________________________
+
+    def test_no_saddle_points():
+>       assert(saddle_points([]))==set()
+E       assert [] == set()
+E         Use -v to get the full diff
+
+test_student.py:10: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert (2, 1) == set()
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert (2, 1) == {(0, 1), (1, 1), (2, 1)}
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert (2, 0) == {(1, 0), (1, 1), (1, 2)}
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert (2, 2) == {(2, 2)}
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+========================== 6 failed in 0.20 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFF.                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(2, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (2, 2)
+E         Extra items in the right set:
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+____________________________ test_no_saddle_points ____________________________
+
+    def test_no_saddle_points():
+>       assert(saddle_points([]))==set()
+E       assert [] == set()
+E         Use -v to get the full diff
+
+test_student.py:10: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(2, 1)} == set()
+E         Extra items in the left set:
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (0, 1)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 0)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (2, 0)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 5 failed, 1 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFF.                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(2, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (2, 2)
+E         Extra items in the right set:
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(2, 1)} == set()
+E         Extra items in the left set:
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (0, 1)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 0)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (2, 0)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 4 failed, 2 passed in 0.44 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 22
+E       if v == min(column):
+E                          ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.26 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 22
+E       if v == min(column):
+E                          ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.23 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFF.                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(2, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (2, 2)
+E         Extra items in the right set:
+E         (0, 2)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(2, 1)} == set()
+E         Extra items in the left set:
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 1), (2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 0)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (2, 0)
+E         Extra items in the right set:
+E         (1, 2)
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 4 failed, 2 passed in 0.15 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+
+test_student.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+>               if candidate == min(column):
+E               NameError: name 'candidate' is not defined
+
+a03.py:19: NameError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+
+test_student.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+>               if candidate == min(column):
+E               NameError: name 'candidate' is not defined
+
+a03.py:19: NameError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+>               if candidate == min(column):
+E               NameError: name 'candidate' is not defined
+
+a03.py:19: NameError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+>               if candidate == min(column):
+E               NameError: name 'candidate' is not defined
+
+a03.py:19: NameError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+>               if candidate == min(column):
+E               NameError: name 'candidate' is not defined
+
+a03.py:19: NameError
+===================== 5 failed, 1 passed in 0.18 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F.FFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert {(0, 2), (1, 2), (2, 2)} == {(0, 2)}
+E         Extra items in the left set:
+E         (1, 2)
+E         (2, 2)
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+E       assert {(0, 2), (1, 0), (2, 1)} == set()
+E         Extra items in the left set:
+E         (1, 0)
+E         (0, 2)
+E         (2, 1)
+E         Use -v to get the full diff
+
+test_student.py:14: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 1), (1, 2), (2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the left set:
+E         (1, 2)
+E         Extra items in the right set:
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 2), (1, 2), (2, 0)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the left set:
+E         (2, 0)
+E         (0, 2)
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert {(0, 2), (1, 1), (2, 2)} == {(2, 2)}
+E         Extra items in the left set:
+E         (0, 2)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+===================== 5 failed, 1 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F..FFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+E       assert [(0, 2)] == {(0, 2)}
+E         Use -v to get the full diff
+
+test_student.py:7: AssertionError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert [(2, 1)] == {(0, 1), (1, 1), (2, 1)}
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert [(1, 2)] == {(1, 0), (1, 1), (1, 2)}
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+E       assert [(2, 2)] == {(2, 2)}
+E         Use -v to get the full diff
+
+test_student.py:29: AssertionError
+===================== 4 failed, 2 passed in 0.19 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F..FFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+
+test_student.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+                if c == min(column):
+>                   results |= [(index, i)]
+E                   TypeError: unsupported operand type(s) for |=: 'set' and 'list'
+
+a03.py:20: TypeError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+                if c == min(column):
+>                   results |= [(index, i)]
+E                   TypeError: unsupported operand type(s) for |=: 'set' and 'list'
+
+a03.py:20: TypeError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+                if c == min(column):
+>                   results |= [(index, i)]
+E                   TypeError: unsupported operand type(s) for |=: 'set' and 'list'
+
+a03.py:20: TypeError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index, row in enumerate(matrix):
+            col = [(i, x) for i, x in enumerate(row) if x == max(row)]
+            for i, c in col:
+                column = [row[i] for row in matrix]
+                if c == min(column):
+>                   results |= [(index, i)]
+E                   TypeError: unsupported operand type(s) for |=: 'set' and 'list'
+
+a03.py:20: TypeError
+===================== 4 failed, 2 passed in 0.27 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.09 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FF.                                                   [100%]
+
+================================== FAILURES ===================================
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (0, 1)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(1, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 2 failed, 4 passed in 0.14 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 14
+E       result = set()
+E                    ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.29 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_saddle_point ______________________________
+
+    def test_saddle_point():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       assert(saddle_points(matrix))==set([(0, 2)])
+
+test_student.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+____________________________ test_no_saddle_points ____________________________
+
+    def test_no_saddle_points():
+>       assert(saddle_points([]))==set()
+
+test_student.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = []
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+___________________________ test_none_saddle_points ___________________________
+
+    def test_none_saddle_points():
+        matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+>       assert(saddle_points(matrix))==set()
+
+test_student.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+
+test_student.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+________________________ test__saddle_point_inbetween _________________________
+
+    def test__saddle_point_inbetween():
+        matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+        expected = set([(2, 2)])
+>       assert(saddle_points(matrix))==expected
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+matrix = [[8, 7, 9], [6, 7, 6], [3, 2, 5]]
+
+    def saddle_points(matrix):
+        """
+        A saddle point is an element which is greaterh thean or equal to every
+        element in its row, it must be also less than or equal to every element
+        in its column.
+        """
+        results = set()
+        for index,r in enumerate(matrix):
+            for i,x in enumerate(r):
+                if x == max(r):
+                    List = [(i, x)]
+            for i, c in List:
+                column = [r[i] for r in matrix]
+                if c == min(column):
+                    results = {(index, i)}
+>       return result
+E       NameError: name 'result' is not defined
+
+a03.py:23: NameError
+========================== 6 failed in 0.20 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FF.                                                   [100%]
+
+================================== FAILURES ===================================
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (0, 1)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(1, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 2 failed, 4 passed in 0.18 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FF.                                                   [100%]
+
+================================== FAILURES ===================================
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 1), (2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(1, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 2 failed, 4 passed in 0.20 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import saddle_points
+E     File "C:\Users\admin\Documents\assignment105\a03.py", line 22
+E       result | = {(index, i)}
+E                ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.22 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FF.                                                   [100%]
+
+================================== FAILURES ===================================
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 1), (2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(1, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 2 failed, 4 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FF.                                                   [100%]
+
+================================== FAILURES ===================================
+____________________ test_multiple_saddle_points_in_column ____________________
+
+    def test_multiple_saddle_points_in_column():
+        matrix = [[4, 5, 4], [3, 5, 5], [1, 5, 4]]
+        expected = set([(0, 1), (1, 1), (2, 1)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(0, 1), (2, 1)} == {(0, 1), (1, 1), (2, 1)}
+E         Extra items in the right set:
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:19: AssertionError
+_____________________ test_multiple_saddle_points_in_row ______________________
+
+    def test_multiple_saddle_points_in_row():
+        matrix = [[6, 7, 8], [5, 5, 5], [7, 5, 6]]
+        expected = set([(1, 0), (1, 1), (1, 2)])
+>       assert(saddle_points(matrix))== expected
+E       assert {(1, 2)} == {(1, 0), (1, 1), (1, 2)}
+E         Extra items in the right set:
+E         (1, 0)
+E         (1, 1)
+E         Use -v to get the full diff
+
+test_student.py:24: AssertionError
+===================== 2 failed, 4 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment105, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================

@@ -1,0 +1,419 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a04 import numbersToText
+a04.py:24: in <module>
+    with open(txt_filename, 'r') as f:
+E   NameError: name 'txt_filename' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.35 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py FFFFF                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText ______________________________
+
+    def test_numbersToText():
+        num=1
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Aik'
+
+test_student.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 1, lang = 'urd'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+                return  dic_numbers[str(i)][0]
+            elif num==i and lang=="urd":
+>               return  (dic_numbers[str(i)][1])
+E               KeyError: '1'
+
+a04.py:14: KeyError
+_____________________________ test_numbersToText1 _____________________________
+
+    def test_numbersToText1():
+        num=10
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Das'
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 10, lang = 'urd'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+                return  dic_numbers[str(i)][0]
+            elif num==i and lang=="urd":
+>               return  (dic_numbers[str(i)][1])
+E               KeyError: '10'
+
+a04.py:14: KeyError
+_____________________________ test_numbersToText2 _____________________________
+
+    def test_numbersToText2():
+        num=11
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Not Available'
+E       AssertionError: assert 'Give valid values' == 'Not Available'
+E         - Give valid values
+E         + Not Available
+
+test_student.py:18: AssertionError
+_____________________________ test_numbersToText3 _____________________________
+
+    def test_numbersToText3():
+        num=0
+        lang='eng'
+>       assert(numbersToText(num,lang))=='Zero'
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  dic_numbers[str(i)][0]
+E               KeyError: '0'
+
+a04.py:12: KeyError
+_____________________________ test_numbersToText4 _____________________________
+
+    def test_numbersToText4():
+        num=0
+>       assert(numbersToText(num))=='Zero'
+
+test_student.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  dic_numbers[str(i)][0]
+E               KeyError: '0'
+
+a04.py:12: KeyError
+========================== 5 failed in 0.51 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py FFFFF                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText ______________________________
+
+    def test_numbersToText():
+        num=1
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Aik'
+
+test_student.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 1, lang = 'urd'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+                return  (dic_numbers[str(i)][0])
+            elif num==i and lang=="urd":
+>               return  (dic_numbers[str(i)][1])
+E               KeyError: '1'
+
+a04.py:14: KeyError
+_____________________________ test_numbersToText1 _____________________________
+
+    def test_numbersToText1():
+        num=10
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Das'
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 10, lang = 'urd'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+                return  (dic_numbers[str(i)][0])
+            elif num==i and lang=="urd":
+>               return  (dic_numbers[str(i)][1])
+E               KeyError: '10'
+
+a04.py:14: KeyError
+_____________________________ test_numbersToText2 _____________________________
+
+    def test_numbersToText2():
+        num=11
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Not Available'
+E       AssertionError: assert 'Give valid values' == 'Not Available'
+E         - Give valid values
+E         + Not Available
+
+test_student.py:18: AssertionError
+_____________________________ test_numbersToText3 _____________________________
+
+    def test_numbersToText3():
+        num=0
+        lang='eng'
+>       assert(numbersToText(num,lang))=='Zero'
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  (dic_numbers[str(i)][0])
+E               KeyError: '0'
+
+a04.py:12: KeyError
+_____________________________ test_numbersToText4 _____________________________
+
+    def test_numbersToText4():
+        num=0
+>       assert(numbersToText(num))=='Zero'
+
+test_student.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  (dic_numbers[str(i)][0])
+E               KeyError: '0'
+
+a04.py:12: KeyError
+========================== 5 failed in 0.22 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ..F..                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText2 _____________________________
+
+    def test_numbersToText2():
+        num=11
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Not Available'
+E       AssertionError: assert 'Give valid values' == 'Not Available'
+E         - Give valid values
+E         + Not Available
+
+test_student.py:18: AssertionError
+===================== 1 failed, 4 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py ..F..                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText2 _____________________________
+
+    def test_numbersToText2():
+        num=11
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Not Available'
+E       AssertionError: assert ' Not Available' == 'Not Available'
+E         -  Not Available
+E         ? -
+E         + Not Available
+
+test_student.py:18: AssertionError
+===================== 1 failed, 4 passed in 0.20 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .....                                                    [100%]
+
+========================== 5 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py FF.FF                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText ______________________________
+
+    def test_numbersToText():
+        num=1
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Aik'
+E       AssertionError: assert ('1 in urd : ', 'Aik') == 'Aik'
+E        +  where ('1 in urd : ', 'Aik') = numbersToText(1, 'urd')
+
+test_student.py:8: AssertionError
+_____________________________ test_numbersToText1 _____________________________
+
+    def test_numbersToText1():
+        num=10
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Das'
+E       AssertionError: assert ('10 in urd : ', 'Das') == 'Das'
+E        +  where ('10 in urd : ', 'Das') = numbersToText(10, 'urd')
+
+test_student.py:13: AssertionError
+_____________________________ test_numbersToText3 _____________________________
+
+    def test_numbersToText3():
+        num=0
+        lang='eng'
+>       assert(numbersToText(num,lang))=='Zero'
+E       AssertionError: assert ('0 in eng : ', 'Zero') == 'Zero'
+E        +  where ('0 in eng : ', 'Zero') = numbersToText(0, 'eng')
+
+test_student.py:23: AssertionError
+_____________________________ test_numbersToText4 _____________________________
+
+    def test_numbersToText4():
+        num=0
+>       assert(numbersToText(num))=='Zero'
+E       AssertionError: assert ('0 in eng : ', 'Zero') == 'Zero'
+E        +  where ('0 in eng : ', 'Zero') = numbersToText(0)
+
+test_student.py:27: AssertionError
+===================== 4 failed, 1 passed in 0.18 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py FF.FF                                                    [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_numbersToText ______________________________
+
+    def test_numbersToText():
+        num=1
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Aik'
+E       AssertionError: assert ('1 in urd : ', 'Aik') == 'Aik'
+E        +  where ('1 in urd : ', 'Aik') = numbersToText(1, 'urd')
+
+test_student.py:8: AssertionError
+_____________________________ test_numbersToText1 _____________________________
+
+    def test_numbersToText1():
+        num=10
+        lang='urd'
+>       assert(numbersToText(num,lang))=='Das'
+E       AssertionError: assert ('10 in urd : ', 'Das') == 'Das'
+E        +  where ('10 in urd : ', 'Das') = numbersToText(10, 'urd')
+
+test_student.py:13: AssertionError
+_____________________________ test_numbersToText3 _____________________________
+
+    def test_numbersToText3():
+        num=0
+        lang='eng'
+>       assert(numbersToText(num,lang))=='Zero'
+
+test_student.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  (str(num) + " in "+ lang +" : ") (dic_numbers[(i)][0])
+E               TypeError: 'str' object is not callable
+
+a04.py:12: TypeError
+_____________________________ test_numbersToText4 _____________________________
+
+    def test_numbersToText4():
+        num=0
+>       assert(numbersToText(num))=='Zero'
+
+test_student.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+num = 0, lang = 'eng'
+
+    def numbersToText(num,lang="eng"):
+        for i in range(11):
+            if num==i and lang=="eng":
+>               return  (str(num) + " in "+ lang +" : ") (dic_numbers[(i)][0])
+E               TypeError: 'str' object is not callable
+
+a04.py:12: TypeError
+===================== 4 failed, 1 passed in 0.19 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment109, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 5 items
+
+test_student.py .....                                                    [100%]
+
+========================== 5 passed in 0.08 seconds ===========================

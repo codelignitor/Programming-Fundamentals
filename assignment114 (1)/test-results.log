@@ -1,0 +1,152 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment114 (1), inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 4 items
+
+test_student.py ..FF                                                     [100%]
+
+================================== FAILURES ===================================
+____________________________ test_missingEntries3 _____________________________
+
+    def test_missingEntries3():
+        data=[
+    	'18P-0006,Ahmed Khan,1,8',
+    	'18P-0130,Ali Hassan,2,2,4',
+    	'18P-6061,Ikram Durrani,3,2,4',
+    	'18P-6089,Muhammad,14',
+    	'18P-6154,Syed Shahid Khaqani,1,2,3',
+    	'18P-6064,Hamza Arif,6.5,7,2.5',
+    	'18P-6065,Muhammad Ali,2,3.2,4'
+    	]
+    
+        for i in range(len(data)):
+>           writeMissingEntries(data[i])
+E           NameError: name 'writeMissingEntries' is not defined
+
+test_student.py:40: NameError
+____________________________ test_missingEntries4 _____________________________
+
+    def test_missingEntries4():
+>       os.remove('logfile.log')
+E       FileNotFoundError: [WinError 2] The system cannot find the file specified: 'logfile.log'
+
+test_student.py:46: FileNotFoundError
+===================== 2 failed, 2 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment114 (1), inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 4 items
+
+test_student.py ..FF                                                     [100%]
+
+================================== FAILURES ===================================
+____________________________ test_missingEntries3 _____________________________
+
+    def test_missingEntries3():
+        data=[
+    	'18P-0006,Ahmed Khan,1,8',
+    	'18P-0130,Ali Hassan,2,2,4',
+    	'18P-6061,Ikram Durrani,3,2,4',
+    	'18P-6089,Muhammad,14',
+    	'18P-6154,Syed Shahid Khaqani,1,2,3',
+    	'18P-6064,Hamza Arif,6.5,7,2.5',
+    	'18P-6065,Muhammad Ali,2,3.2,4'
+    	]
+    
+        for i in range(len(data)):
+>           writeMissingEntries(data[i])
+E           NameError: name 'writeMissingEntries' is not defined
+
+test_student.py:40: NameError
+____________________________ test_missingEntries4 _____________________________
+
+    def test_missingEntries4():
+>       os.remove('logfile.log')
+E       FileNotFoundError: [WinError 2] The system cannot find the file specified: 'logfile.log'
+
+test_student.py:46: FileNotFoundError
+===================== 2 failed, 2 passed in 0.19 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment114 (1), inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 4 items
+
+test_student.py ..FF                                                     [100%]
+
+================================== FAILURES ===================================
+____________________________ test_missingEntries3 _____________________________
+
+    def test_missingEntries3():
+        data=[
+    	'18P-0006,Ahmed Khan,1,8',
+    	'18P-0130,Ali Hassan,2,2,4',
+    	'18P-6061,Ikram Durrani,3,2,4',
+    	'18P-6089,Muhammad,14',
+    	'18P-6154,Syed Shahid Khaqani,1,2,3',
+    	'18P-6064,Hamza Arif,6.5,7,2.5',
+    	'18P-6065,Muhammad Ali,2,3.2,4'
+    	]
+    
+        for i in range(len(data)):
+>           writeMissingEntries(data[i])
+E           NameError: name 'writeMissingEntries' is not defined
+
+test_student.py:40: NameError
+____________________________ test_missingEntries4 _____________________________
+
+    def test_missingEntries4():
+>       os.remove('logfile.log')
+E       FileNotFoundError: [WinError 2] The system cannot find the file specified: 'logfile.log'
+
+test_student.py:46: FileNotFoundError
+===================== 2 failed, 2 passed in 0.34 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: C:\Users\admin\Documents\assignment114 (1), inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 4 items
+
+test_student.py ..FF                                                     [100%]
+
+================================== FAILURES ===================================
+____________________________ test_missingEntries3 _____________________________
+
+    def test_missingEntries3():
+        data=[
+    	'18P-0006,Ahmed Khan,1,8',
+    	'18P-0130,Ali Hassan,2,2,4',
+    	'18P-6061,Ikram Durrani,3,2,4',
+    	'18P-6089,Muhammad,14',
+    	'18P-6154,Syed Shahid Khaqani,1,2,3',
+    	'18P-6064,Hamza Arif,6.5,7,2.5',
+    	'18P-6065,Muhammad Ali,2,3.2,4'
+    	]
+    
+        for i in range(len(data)):
+>           writeMissingEntries(data[i])
+E           NameError: name 'writeMissingEntries' is not defined
+
+test_student.py:40: NameError
+____________________________ test_missingEntries4 _____________________________
+
+    def test_missingEntries4():
+>       os.remove('logfile.log')
+E       FileNotFoundError: [WinError 2] The system cannot find the file specified: 'logfile.log'
+
+test_student.py:46: FileNotFoundError
+===================== 2 failed, 2 passed in 0.11 seconds ======================
